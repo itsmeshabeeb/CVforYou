@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'user',
+    'staff',
+    'superadmin',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +59,7 @@ ROOT_URLCONF = 'resume.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR/'user/templates'],
+        'DIRS': [BASE_DIR/'user/templates',BASE_DIR/'staff/templates',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,6 +82,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE':'django.db.backends.postgresql_psycop2',
+        # 'NAME':'resume_db',
+        # 'USER':'postgres',
+        # 'PASSWORD':'302000',
+        # 'HOST':'localhost',
+        # 'PORT':'5432',
     }
 }
 

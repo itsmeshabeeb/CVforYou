@@ -18,3 +18,18 @@ def personal(request):
 
 def experiences(request):
     return render(request,'experiences.html')
+
+def resume(request):
+    return render(request,'resume.html')
+
+# def resume2(request):
+#     return render(request,'resume2.html')
+
+def pricing(request):
+    return render(request,'pricing.html')
+
+def demo(request):
+    return render(request,'check.html')
+
+def premiumcheckout(request):
+    return render(request,'premiumcheckout.html')

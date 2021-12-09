@@ -91,7 +91,16 @@ img #feedpic {
     box-shadow: 10px 10px 10px -8px rgba(0, 0, 0, 0.54);
     -webkit-box-shadow: 10px 10px 10px -8px rgba(0, 0, 0, 0.54);
     -moz-box-shadow: 10px 10px 10px -8px rgba(0, 0, 0, 0.54);
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
+a:hover .tempimage {
+    opacity: 0.3;
+  }
 .count{
     color: black;
     font-weight: normal;
@@ -108,3 +117,22 @@ img #feedpic {
     width: 5.8rem;
     height: 5.8rem;
 }
+#profileimg{
+    width: 200px;
+    border: 5px solid #F3B943;
+    border-radius: 15px;
+}
+.skills li{
+    padding-top: 5px;
+}
+.details ol i{
+    color: #F3B943;
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
